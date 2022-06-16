@@ -12,22 +12,22 @@ import java.util.Random;
 
 public class MinFromArrayList {
 
-    static int getMin () {
+    static int getMin() {
         Random random = new Random();
         ArrayList<Integer> numbers = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
             numbers.add(random.nextInt(100));
         }
-        int min = numbers.get (0);
-        for (Integer k: numbers) {
-              if (k < min)
-                  min = k;
+        int min = numbers.get(0);
+        for (Integer k : numbers) {
+            if (k < min)
+                min = k;
         }
         System.out.println(numbers);
         return min;
     }
 
     public static void main(String[] args) {
-        System.out.println(getMin());
+        System.out.println("Минимальное число из списка чисел: " + getMin());
     }
 }
